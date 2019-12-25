@@ -8,12 +8,25 @@
                     <input type="text" name="name" id="name" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="quanlity">Quanlity:</label>
-                    <select name="quanlity" id="quanlity" class="form-control">
+                    <label for="quality">Quanlity:</label>
+                    <select name="quality" id="quality" class="form-control">
                         <option disableed selected>Choose Quanlity</option>
-                        <option value="1">Heigh Quanlity</option>
-                        <option value="1">Medium Quanlity</option>
-                        <option value="1">Low Quanlity</option>
+                        <option value="Heigh Quanlity">Heigh Quanlity</option>
+                        <option value="Medium Quanlity">Medium Quanlity</option>
+                        <option value="Low Quanlity">Low Quanlity</option>
+                    </select>
+                </div>
+                <!-- room -->
+                <div class="form-group">
+                    <label for="room">Room:</label>
+                    <select name="room" id="room" class="form-control">
+                        <?php
+                            foreach ($data['room_data'] as $rows) {
+                        ?>
+                                <option value="<?php echo $rows['id_room']; ?>"><?php echo $rows['room_name']; ?></option>
+                        <?php
+                            }
+                        ?>
                     </select>
                 </div>
                 <div class="form-group">
@@ -24,8 +37,8 @@
                     <label for="date">Date:</label>
                     <input type="date" name="date" id="date" class="form-control">
                 </div>
+                <a href="index.php?action=material" class="btn btn-success">Go Back</a>
                 <input type="submit" name="button" id="button" class="btn btn-primary">
-                <a href="index.php" class="btn btn-first">Go Back</a>
             </form>
         </div>
         <div class="col-3"></div>
