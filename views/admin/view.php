@@ -3,7 +3,7 @@
 
         <!-- Heading -->
         <div class="card mb-4 wow fadeIn">
-            <table id="example" class="table table-striped table-bordered mt-4 mb-4 mr-2" style="width:100%">
+            <table  class="table table-striped table-bordered mt-4 mb-4 mr-2" style="width:100%">
                 <thead>
                     <tr>
                         <th>Id</th>
