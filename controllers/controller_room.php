@@ -35,3 +35,16 @@ function delete_room(&$data){
     }
     header("Location: index2.php?action=$action");
 }
+function edit_room(&$data){
+    $data['room_edit'] = m_get_detail();
+    $data['page'] = "room/edit";
+}
+function edit_form(&$data){
+    $data_room = m_edit_form($_POST);
+    if($data_room){
+        $action = 'view_room';
+    }else{
+        echo "Cannot edit form";
+    }
+    header("Location: index2.php?action=$action");
+}
