@@ -65,5 +65,18 @@ function edit_data_material(&$data){
     }
     header("Location:index.php?action=$action");
 }
+
+function veiw_user_data(&$data){
+    $data['data'] = user_data();
+    $data['page'] = "admin/view_user";
+}
+
+function add_user(&$data){
+    $data['page'] = "admin/creat_user";
+}
+
+function m_add_userdata(&$data){
+    $data['user'] = m_add_user($_POST);
+}
 ?>
 
