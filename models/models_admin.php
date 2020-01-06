@@ -70,3 +70,35 @@ function updatate_material(){
     $result = mysqli_query($connection, $query);
     return $result;
 }
+
+
+//view user
+
+function user_data(){
+    include "connection.php";
+    $query = "SELECT * FROM tbl_user";
+    $result = mysqli_query($connection,$query);
+    $rows = [];
+    if($result && mysqli_num_rows($result) > 0){
+        foreach($result as $record){
+            $rows[] = $record;
+        }
+    }
+    return $rows;
+}
+// add new user
+
+function m_add_user($data){
+    include_once "connection.php";
+    $email = $_POST['email'];
+    $pwd = $_POST['password'];
+    $role = $_POST['role'];
+    $query = "INSERT INTO tbl_user (email, password) VALUE ('$email' , '$pwd', '$role')";
+    $result = mysqli_query($connection, $query);
+    if($result){
+        header('location:views/admin/view_user.php');
+    }else{
+        echo "cannot add user";
+    }
+}
+?>

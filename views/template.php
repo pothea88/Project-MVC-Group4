@@ -69,7 +69,7 @@
 
                 <!-- Brand -->
                 <a class="navbar-brand waves-effect" href="index.php" target="_blank">
-                    <strong class="blue-text">Storage Management</strong>
+                <img src="img/logo.jpg" class="img-fluid" width="130">
                 </a>
 
                 <!-- Collapse -->
@@ -92,7 +92,7 @@
                             </form>
                         </li> -->
                         <li class="nav-item">
-                            <a href="#" class="nav-link border border-light rounded waves-effect" target="_blank" style="margin-left:50px;">
+                            <a href="#" class="nav-link border border-light rounded waves-effect" target="_blank" style="margin-left:850px;">
                                 Logout
                             </a>
                         </li>
@@ -106,18 +106,13 @@
 
         <!-- Sidebar -->
         <div class="sidebar-fixed position-fixed">
-
-            <a class="logo-wrapper waves-effect">
-                <img src="https://mdbootstrap.com/img/logo/mdb-email.png" class="img-fluid" alt="">
-            </a>
-
-            <div class="list-group list-group-flush">
-                <a href="#" class="list-group-item active waves-effect">
+            <div class="list-group list-group-flush mt-3">
+                <a href="index.php" class="list-group-item active waves-effect">
                     <i class="fas fa-chart-pie mr-3"></i>Dashboard
                 </a>
                 <a href="index.php?action=add_material" class="list-group-item list-group-item-action waves-effect">Add New Material</a>
                 <a href="index2.php?action=view_room" class="list-group-item list-group-item-action waves-effect">List Room Storage</a>
-                <a href="index1.php" class="list-group-item list-group-item-action waves-effect">List Users</a>
+                <a href="index.php?action=veiw_user_data" class="list-group-item list-group-item-action waves-effect">List Users</a>
             </div>
 
         </div>
@@ -150,6 +145,6 @@
     <script src="js/jquery.dataTables.min.js"></script>
     <script src="js/dataTables.bootstrap4.min.js"></script>
     <script src="js/dataTables.colReorder.min.js"></script>
+        <p class="text-center">&copy;PNC MVC TEAM 04</p>
 </body>
-
 </html>

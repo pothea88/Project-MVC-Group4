@@ -1,6 +1,11 @@
 <main class="pt-5 mx-lg-5">
     <div class="container-fluid mt-5">
-
+        <div class="row">
+            <div class="col-12">
+            <h2 class="text-center">List data of material</h2>
+            </div>
+        </div>
+        <hr>
         <!-- Heading -->
         <div class="card mb-4 wow fadeIn">
             <table  class="table table-striped table-bordered mt-4 mb-4 mr-2" style="width:100%">
