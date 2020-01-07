@@ -75,7 +75,7 @@ function add_user(&$data){
     $data['page'] = "admin/creat_user";
 }
 
-function m_add_userdata(&$data){
+function add_userdata(&$data){
     $data['user'] = m_add_user($_POST);
 }
 ?>
