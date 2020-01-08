@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap</title>
+    <title>Storage management</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <!-- Font Awesome -->
@@ -82,15 +82,6 @@
 
                     <!-- Right -->
                     <ul class="navbar-nav nav-flex-icons">
-                        <!-- <li class="nav-item">
-                            <form action="#">
-                                <select name="room" id="room" class="form-control" style="width:300px; margin-left:400px;">
-                                    <option disabled selected>Choose room</option>
-                                    <option value="B05" >B05</option>
-                                    <option value="B14">B14</option>
-                                </select>
-                            </form>
-                        </li> -->
                         <li class="nav-item">
                             <a href="#" class="nav-link border border-light rounded waves-effect" target="_blank" style="margin-left:850px;">
                                 Logout

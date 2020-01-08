@@ -7,7 +7,7 @@
                     <h2 class="text-center text-white">ADD NEW USER</h2>
                 </div>
                 <div class="card-body">
-                    <form action="index.php?action=m_add_userdata" method="post">
+                    <form action="index.php?action=add_userdata" method="post">
                         <div class="form-group">
                             <label for="email">Email:</label>
                             <input type="email" name="email" id="email" class="form-control">
