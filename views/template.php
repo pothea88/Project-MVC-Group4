@@ -145,6 +145,6 @@
     <script src="js/jquery.dataTables.min.js"></script>
     <script src="js/dataTables.bootstrap4.min.js"></script>
     <script src="js/dataTables.colReorder.min.js"></script>
-        <p class="text-center">&copy;PNC MVC TEAM 04</p>
+        <p class="text-center mt-4">&copy;PNC MVC TEAM 04</p>
 </body>
 </html>

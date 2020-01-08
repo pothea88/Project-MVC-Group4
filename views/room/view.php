@@ -10,7 +10,7 @@
         <hr>
         <!-- Heading -->
         <div class="card mb-4 wow fadeIn">
-            <table id="example" class="table table-striped table-bordered mt-4 mb-4 mr-2" style="width:100%">
+            <table class="table table-striped table-bordered mt-4 mb-4 mr-2" style="width:100%">
                 <thead>
                     <tr>
                         <th>Id</th>
@@ -32,7 +32,6 @@
                                 <td><?php echo $result_room['floor']; ?></td>
                                 <td><?php echo $result_room['description']; ?></td>
                                 <td>
-                                    <a href="index2.php?action=view_rooml&id=<?php echo $result_room['id_room'] ?>"><i class="material-icons text-primary">visibility</i></a>
                                     <a href="index2.php?action=edit_room&id=<?php echo $result_room['id_room'] ?>"><i class="material-icons text-success">edit</i></a>
                                     <a href="index2.php?action=delete_room&id=<?php echo $result_room['id_room'] ?>"><i class="material-icons text-danger">delete</i></a>
                                 </td>
