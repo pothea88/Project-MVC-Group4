@@ -1,13 +1,12 @@
 <main class="pt-5 mx-lg-5">
     <div class="container-fluid mt-5">
-        <div class="row">
-            <div class="col-12">
-            <h2 class="text-center">List data of material</h2>
+    <div class="row">
+            <div class="col-12 mt-3">
+                <h2 class="text-center">List of Materials</h2>
             </div>
         </div>
-        <hr>
         <!-- Heading -->
-        <div class="card mb-4 wow fadeIn">
+        <div class="card mb-5 wow fadeIn">
             <table  class="table table-striped table-bordered mt-4 mb-4 mr-2" style="width:100%">
                 <thead>
                     <tr>
@@ -16,6 +15,7 @@
                         <th>Quanlity</th>
                         <th>Quantity</th>
                         <th>Date</th>
+                        <th>Room</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -31,14 +31,16 @@
                                 <td><?php echo $rows['quality']; ?></td>
                                 <td><?php echo $rows['quantity']; ?></td>
                                 <td><?php echo $rows['date']; ?></td>
+                                <td><?php echo $rows['room_name']; ?></td>
                                 <td>
-                                    <a href="index.php?action=view_detail&id=<?php echo $rows['id_material'] ?>"><i class="material-icons text-primary">visibility</i></a>
+                                    <!-- <a href="index.php?action=view_detail&id=<?php echo $rows['id_material'] ?>"><i class="material-icons text-primary">visibility</i></a> -->
                                     <a href="index.php?action=edit&id=<?php echo $rows['id_material'] ?>"><i class="material-icons text-success">edit</i></a>
-                                    <a href="index.php?action=delete&id=<?php echo $rows['id_material']; ?>" ><i class="material-icons text-danger">delete</i></a>
+                                    <a href="index.php?action=delete&id=<?php echo $rows['id'];?>"><i class="material-icons text-danger" onclick="return confirm('Are you sure you want to delete?');">delete</i></a>
                                 </td>
                             </tr>
                         </tbody>
                 <?php
+                
                     }
                 }
                 ?>

@@ -1,7 +1,10 @@
 <?php
 function material_data(){
     include "connection.php";
-    $query = "select * from tbl_material";
+    // $query = "select * from tbl_material";
+    $query = "SELECT mat.id_material,material_name,quantity,quality,date,room.room_name
+                FROM tbl_material mat
+                LEFT JOIN tbl_room room ON room.id_room = mat.roomID";
     $result = mysqli_query($connection,$query);
     $rows = [];
     if($result && mysqli_num_rows($result) > 0 ){
@@ -41,7 +44,7 @@ function add_material_data($data){
     $quantity = $_POST['quantity'];
     $date = $_POST['date'];
     $room = $_POST['room'];
-    $query = "INSERT INTO tbl_material(material_name, quantity, quality, date,id_room) 
+    $query = "INSERT INTO tbl_material(material_name, quantity, quality, date,roomID) 
     VALUES('$name','$quantity','$quality','$date','$room')";
     $result = mysqli_query($connection, $query);
     return $result;
