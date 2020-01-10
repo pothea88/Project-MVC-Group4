@@ -68,7 +68,7 @@
             <div class="container-fluid">
 
                 <!-- Brand -->
-                <a class="navbar-brand waves-effect" href="index.php" target="_blank">
+                <a class="navbar-brand waves-effect" href="index1.php" target="_blank">
                 <img src="img/logo.jpg" class="img-fluid" width="130">
                 </a>
 
@@ -98,12 +98,11 @@
         <!-- Sidebar -->
         <div class="sidebar-fixed position-fixed">
             <div class="list-group list-group-flush mt-3">
-                <a href="index.php" class="list-group-item active waves-effect">
+                <a href="index1.php" class="list-group-item active waves-effect">
                     <i class="fas fa-chart-pie mr-3"></i>Dashboard
                 </a>
-                <a href="index.php?action=add_material" class="list-group-item list-group-item-action waves-effect">Add New Material</a>
+                <a href="index.php?action=request" class="list-group-item list-group-item-action waves-effect">Make Request</a>
                 <a href="index2.php?action=view_room" class="list-group-item list-group-item-action waves-effect">List Room Storage</a>
-                <a href="index.php?action=veiw_user_data" class="list-group-item list-group-item-action waves-effect">List Users</a>
             </div>
 
         </div>
