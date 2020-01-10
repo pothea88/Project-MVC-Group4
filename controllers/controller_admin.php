@@ -36,8 +36,8 @@ function add_data_material(&$data){
     header("Location: index.php?action=$action");
 }
 //delete
-function delete(&$data){
-    $delete_material = delete_material_data();
+function delete(){
+    $delete_material = delete_material_data($_POST);
     if($delete_material){
         $action = 'material';
     }else{

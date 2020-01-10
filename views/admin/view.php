@@ -35,7 +35,7 @@
                                 <td>
                                     <!-- <a href="index.php?action=view_detail&id=<?php echo $rows['id_material'] ?>"><i class="material-icons text-primary">visibility</i></a> -->
                                     <a href="index.php?action=edit&id=<?php echo $rows['id_material'] ?>"><i class="material-icons text-success">edit</i></a>
-                                    <a href="index.php?action=delete&id=<?php echo $rows['id'];?>"><i class="material-icons text-danger" onclick="return confirm('Are you sure you want to delete?');">delete</i></a>
+                                    <a href="index.php?action=delete&id=<?php echo $rows['id_material'];?>"><i class="material-icons text-danger" onclick="return confirm('Are you sure you want to delete?');">delete</i></a>
                                 </td>
                             </tr>
                         </tbody>

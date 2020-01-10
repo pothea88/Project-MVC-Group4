@@ -61,7 +61,7 @@ function delete_material_data(){
 // update material data 
 
 function updatate_material(){
-    include "connection.php";
+    include_once "connection.php";
     $id = $_GET['id'];
     $name = $_POST['name'];
     $quality = $_POST['quality'];
@@ -69,7 +69,7 @@ function updatate_material(){
     $date = $_POST['date'];
     $room = $_POST['room'];
     $query = "UPDATE tbl_material 
-    SET material_name = '$name',quantity ='$quantity',quality ='$quality',date ='$date',id_room = '$room' WHERE id_material = $id";
+    SET material_name = '$name',quantity ='$quantity',quality ='$quality',date ='$date',roomID = '$room' WHERE id_material = '$id' ";
     $result = mysqli_query($connection, $query);
     return $result;
 }
