@@ -10,7 +10,7 @@
                         <?php
                         foreach ($data['data_material'] as $row) {
                             ?>
-                        <form action="index.php?action=edit_data_material&id=<?php echo $row['id_material']; ?>" method="post">
+                        <form action="index0.php?action=edit_data_material&id=<?php echo $row['id_material']; ?>" method="post">
                             <div class="form-group">
                                 <label for="name">Name:</label>
                                 <input type="text" name="name" id="name" value="<?php echo $row['material_name'] ?>" class="form-control">
@@ -47,7 +47,7 @@
                                 ?>
                             </select>
                         </div>
-                        <a href="index.php?action=material" class="btn btn-success">Go Back</a>
+                        <a href="index0.php?action=material" class="btn btn-success">Go Back</a>
                         <input type="submit" name="button" id="button" class="btn btn-primary">
                     </form>
                 </div>

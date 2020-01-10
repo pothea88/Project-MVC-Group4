@@ -15,8 +15,12 @@ function material(&$data){
     $data['page'] = "n-user/view";
 }
 
-function request_material(&$data) {
+function request(&$data) {
     $data['page'] = "n-user/request";
+}
+function view_room(&$data) {
+    $data['data'] = v_room();
+    $data['page'] = "n-user/view_room";
 }
 
 ?>

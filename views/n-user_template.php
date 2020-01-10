@@ -101,8 +101,8 @@
                 <a href="index1.php" class="list-group-item active waves-effect">
                     <i class="fas fa-chart-pie mr-3"></i>Dashboard
                 </a>
-                <a href="index.php?action=request" class="list-group-item list-group-item-action waves-effect">Make Request</a>
-                <a href="index2.php?action=view_room" class="list-group-item list-group-item-action waves-effect">List Room Storage</a>
+                <a href="index1.php?action=request" class="list-group-item list-group-item-action waves-effect">Make Request</a>
+                <a href="index1.php?action=view_room" class="list-group-item list-group-item-action waves-effect">List Room Storage</a>
             </div>
 
         </div>

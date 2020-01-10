@@ -74,7 +74,7 @@ form.login input[type=checkbox] {
 }
 form.login .forgetpass {
 	float: right;
-	color: #fff;
+	color: rgb(247, 243, 243);
 	text-decoration: none;
 	transition: .3s;
 }

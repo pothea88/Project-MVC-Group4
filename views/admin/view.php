@@ -20,9 +20,10 @@
                     </tr>
                 </thead>
                 <?php
+                $id = 1;
                 if (isset($data['data'])) {
-                    $id = 1;
                     foreach ($data['data'] as $rows) {
+                        
                 ?>
                         <tbody>
                             <tr>
@@ -33,14 +34,13 @@
                                 <td><?php echo $rows['date']; ?></td>
                                 <td><?php echo $rows['room_name']; ?></td>
                                 <td>
-                                    <!-- <a href="index.php?action=view_detail&id=<?php echo $rows['id_material'] ?>"><i class="material-icons text-primary">visibility</i></a> -->
-                                    <a href="index.php?action=edit&id=<?php echo $rows['id_material'] ?>"><i class="material-icons text-success">edit</i></a>
-                                    <a href="index.php?action=delete&id=<?php echo $rows['id_material'];?>"><i class="material-icons text-danger" onclick="return confirm('Are you sure you want to delete?');">delete</i></a>
+                                    <a href="index0.php?action=edit&id=<?php echo $rows['id_material'] ?>"><i class="material-icons text-success">edit</i></a>
+                                    <a href="index0.php?action=delete&id=<?php echo $rows['id_material'];?>"><i class="material-icons text-danger" onclick="return confirm('Are you sure you want to delete?');">delete</i></a>
                                 </td>
                             </tr>
                         </tbody>
                 <?php
-                
+                    $id ++;
                     }
                 }
                 ?>

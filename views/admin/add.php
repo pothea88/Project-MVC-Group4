@@ -7,7 +7,7 @@
                     <h2 class="text-center text-white">ADD NEW MATERIAL</h2>
                 </div>
                 <div class="card-body">
-                    <form action="index.php?action=add_data_material" method="post">
+                    <form action="index0.php?action=add_data_material" method="post">
                         <div class="form-group">
                             <label for="name">Name:</label>
                             <input type="text" name="name" id="name" class="form-control">
@@ -16,7 +16,7 @@
                             <label for="quality">Quanlity:</label>
                             <select name="quality" id="quality" class="form-control">
                                 <option disableed selected>Choose Quanlity</option>
-                                <option value="Heigh Quanlity">Heigh Quanlity</option>
+                                <option value="Heigh Quanlity">High Quanlity</option>
                                 <option value="Medium Quanlity">Medium Quanlity</option>
                                 <option value="Low Quanlity">Low Quanlity</option>
                             </select>
@@ -42,7 +42,7 @@
                             <label for="date">Date:</label>
                             <input type="date" name="date" id="date" class="form-control">
                         </div>
-                        <a href="index.php?action=material" class="btn btn-success">Go Back</a>
+                        <a href="index0.php?action=material" class="btn btn-success">Go Back</a>
                         <input type="submit" name="button" id="button" class="btn btn-primary">
                     </form>
                 </div>

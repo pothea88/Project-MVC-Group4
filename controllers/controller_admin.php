@@ -33,7 +33,7 @@ function add_data_material(&$data){
     }else{
         $action ='add_material';
     }
-    header("Location: index.php?action=$action");
+    header("Location: index0.php?action=$action");
 }
 //delete
 function delete(){
@@ -43,7 +43,7 @@ function delete(){
     }else{
         echo "Cannot delete data";
     }
-    header("Location: index.php?action=$action");
+    header("Location: index0.php?action=$action");
 }
 
 // edit material 
@@ -63,12 +63,7 @@ function edit_data_material(&$data){
     }else{
         echo "Cannot update material data";
     }
-    header("Location:index.php?action=$action");
-}
-
-function veiw_user_data(&$data){
-    $data['data'] = user_data();
-    $data['page'] = "admin/view_user";
+    header("Location:index0.php?action=$action");
 }
 
 function add_user(&$data){
