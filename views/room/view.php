@@ -33,7 +33,7 @@
                                 <td><?php echo $result_room['description']; ?></td>
                                 <td>
                                     <a href="index2.php?action=edit_room&id=<?php echo $result_room['id_room'] ?>"><i class="material-icons text-success">edit</i></a>
-                                    <a href="index2.php?action=delete_room&id=<?php echo $result_room['id_room'] ?>"><i class="material-icons text-danger">delete</i></a>
+                                    <a href="index2.php?action=delete_room&id=<?php echo $result_room['id_room'] ?>" onclick=" return confirm('Are you sure to delete?')"><i class="material-icons text-danger">delete</i></a>
                                 </td>
                             </tr>
 

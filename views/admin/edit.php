@@ -7,10 +7,10 @@
                     <h2 class="text-center text-white">EDIT MATERIAL</h2>
                 </div>
                 <div class="card-body">
-                    <form action="index.php?action=edit_data_material" method="post">
                         <?php
                         foreach ($data['data_material'] as $row) {
                             ?>
+                        <form action="index.php?action=edit_data_material&id=<?php echo $row['id_material']; ?>" method="post">
                             <div class="form-group">
                                 <label for="name">Name:</label>
                                 <input type="text" name="name" id="name" value="<?php echo $row['material_name'] ?>" class="form-control">

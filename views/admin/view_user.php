@@ -16,7 +16,7 @@
                         <th>E-mail</th>
                         <th>Password</th>
                         <th>Role</th>
-                        <th>Action</th>
+                        <!-- <th>Action</th> -->
                     </tr>
                 </thead>
                 <?php
@@ -30,11 +30,11 @@
                                 <td><?php echo $rows['email']; ?></td>
                                 <td><?php echo $rows['password']; ?></td>
                                 <td><?php echo $rows['role']; ?></td>
-                                <td>
+                                <!-- <td>
                                     <a href="index.php?action=view_detail&id=<?php echo $rows['id_material'] ?>"><i class="material-icons text-primary">visibility</i></a>
                                     <a href="index.php?action=edit&id=<?php echo $rows['id_material'] ?>"><i class="material-icons text-success">edit</i></a>
                                     <a href="index.php?action=delete&id=<?php echo $rows['id_material']; ?>" ><i class="material-icons text-danger">delete</i></a>
-                                </td>
+                                </td> -->
                             </tr>
                         </tbody>
                 <?php
